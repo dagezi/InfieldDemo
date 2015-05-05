@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".DemoActivity">
+
+    <TextView android:text="Sign Up" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                style="@style/infield_field">
+                <TextView
+                    style="@style/infield_label"
+                    android:text="First Name"
+                    android:labelFor="@+id/first_name_edit"/>
+
+                <EditText
+                    android:id="@+id/first_name_edit"
+                    style="@style/infield_edit" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                style="@style/infield_field" >
+                <TextView
+                    style="@style/infield_label"
+                    android:text="Last Name"
+                    android:labelFor="@+id/last_name_edit"/>
+
+                <EditText
+                    android:id="@+id/last_name_edit"
+                    style="@style/infield_edit" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            style="@style/infield_field">
+            <TextView
+                style="@style/infield_label"
+                android:text="Your email or mobile number"
+                android:labelFor="@+id/email_or_mobile_number_edit" />
+
+            <EditText
+                android:id="@+id/email_or_mobile_number_edit"
+                style="@style/infield_edit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            style="@style/infield_field">
+            <TextView
+                style="@style/infield_label"
+                android:text="Re-enter your email or mobile number"
+                android:labelFor="@+id/email_or_mobile_number_again_edit" />
+
+            <EditText
+                android:id="@+id/email_or_mobile_number_again_edit"
+                style="@style/infield_edit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            style="@style/infield_field">
+            <TextView
+                style="@style/infield_label"
+                android:text="New password"
+                android:labelFor="@+id/email_or_mobile_number_again_edit" />
+
+            <EditText
+                android:id="@+id/password_edit"
+                style="@style/infield_edit" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
